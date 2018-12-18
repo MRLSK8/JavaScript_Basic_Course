@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title> JavaScript Course </title>
+</head>
+<body>
+
+
+	<script>
+		console.log('Hello World');
+		console.log('First Project in JavaScript!');
+
+		// Types of data in JS
+		var name = ' Marcelo '
+		var age = 20;
+		var weight = 55.6;
+		var person = true;
+		// Array in JS
+		var namesOfPeople = ['Marcelo', 'Aline', 'Rayane', 'Nayara'];
+
+		// Object in JS
+		var people = {
+			name: 'Marcelo',
+			age: 20,
+			weight: 55.6,
+			person: true
+		};
+
+		// "printf" in JS
+		console.log(namesOfPeople);
+		console.log(namesOfPeople[2]);
+		console.log(people.weight);
+		console.log(name);
+
+		// Operations in JS
+		var x = 2, y = 3;
+		var result = Math.pow(x, y);
+		console.log(result);
+
+		// Function in JS
+		function factorial(number) {
+			if(number === 1){  // Three "equals sign" verify if the type of the variables are also equals 
+				return 1;
+			}else{
+				return number * factorial(number - 1); 
+			}
+		}
+		var result = factorial(5);
+		console.log(result);
+
+		// Using setInterval and setTimeout
+		function showString(){
+			console.log("Hello World");
+		}
+		setInterval(showString, 1000);
+
+		setTimeout(() => {
+			console.log("Yaee");
+		}, 2000);
+
+	</script>
+</body>
+</html>
