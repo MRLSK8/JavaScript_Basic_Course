@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title> Exercício 1 </title>
+</head>
+<body>
+
+    <script>    
+        var endereco = {
+            rua: 'Rua dos pinheiros',
+            numero: 1293,
+            bairro: 'Centro',
+            cidade: 'São Paulo',
+            uf: 'SP'
+        };
+
+        function string_details(rua, numero, bairro, cidade, uf){
+            var details = " O usuário mora em " + cidade + "/" + uf + ", no bairro " + bairro + ", na rua " + "\"" + rua + "\"" + " com nº " + numero;
+            return details;
+        }
+
+        var result = string_details(endereco.rua, endereco.numero, endereco.bairro, endereco.cidade, endereco.uf);
+        
+        console.log(result);
+
+    </script>
+
+</body>
+</html>
