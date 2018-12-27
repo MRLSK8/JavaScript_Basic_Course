@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Manipulando a DOM </title>
+</head>
+<body>
+   <div id= "app">
+      
+   </div>
+   
+    <script>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://github.com/MRLSK8');
+        
+        var textElement = document.createTextNode('Acessar conta do github!');
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+    </script>
+</body>
+</html>
