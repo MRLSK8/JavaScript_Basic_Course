@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title> Exercicio 3 </title>
+</head>
+<body>
+    <h1> Lista de nomes de pessoas </h1>
+    <h2> Pessos: </h2>
+
+    <ul></ul>
+    
+    <script>
+        var nomes = ['Diego', 'Aline', 'Gabriel', 'Lucas', 'Marcelo', 'Carolina', 'Marina', 'Rayane', 'Nayara'];
+        var listElement = document.querySelector('ul');
+    
+        for (nome of nomes) {
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(nome);
+
+            liElement.appendChild(textElement);
+            listElement.appendChild(liElement);
+        }
+        
+    </script>
+   
+</body>
+</html>
