@@ -6,13 +6,16 @@
     <title> Exercicio 3 </title>
 </head>
 <body>
+    <input type="text" name="nome">
+    <button onClick="adicionar()"> Adicionar </button>
+
     <h1> Lista de nomes de pessoas </h1>
     <h2> Pessoas: </h2>
 
     <ul></ul>
     
     <script>
-        var nomes = ['Diego', 'Aline', 'Gabriel', 'Lucas', 'Marcelo', 'Carolina', 'Marina', 'Rayane', 'Nayara'];
+        var nomes = ['Gabriel'];
         var listElement = document.querySelector('ul');
     
         for (nome of nomes) {
@@ -21,6 +24,17 @@
 
             liElement.appendChild(textElement);
             listElement.appendChild(liElement);
+        }
+
+        function adicionar() {
+            var liElement = document.createElement('li');
+            var NewName = document.querySelector('input[name=nome]');
+            var textElement = document.createTextNode(NewName.value);
+
+            liElement.appendChild(textElement);
+            listElement.appendChild(liElement);
+
+            NewName.value = " ";
         }
         
     </script>
