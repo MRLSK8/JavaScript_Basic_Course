@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercicio 1</title>
+</head>
+
+<body>
+  <button id="botão">Novo quadrado</button>
+
+  <div id="squares"></div>
+
+  <script>
+    var btnElement = document.getElementById('botão');
+    var squaresElement = document.getElementById('squares');
+
+    btnElement.onclick = function () {
+      var square = document.createElement('div');
+
+      square.style.width = '100px';
+      square.style.height = '100px';
+      square.style.backgroundColor = '#F00';
+
+      squaresElement.appendChild(square);
+    };
+  </script>
+</body>
+
+</html>
