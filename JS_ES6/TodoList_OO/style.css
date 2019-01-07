@@ -1,0 +1,9 @@
+.list{
+    margin: 0;
+    padding: 10px 0 60px 15px;
+    list-style: square inside url('todolist.png');
+}
+.compras{
+    font-size: 30px;
+    text-shadow: 3px 2px red;
+}
