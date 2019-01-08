@@ -31,6 +31,8 @@ console.log(tabalho);
 
 // 2.4 Unindo operações
 
-var idades = usuarios.map(item => ({ ...item, idade: item.idade * 2})).filter(item => item.idade <= 50);
+var idades = usuarios
+    .map(item => ({ ...item, idade: item.idade * 2}))
+    .filter(item => item.idade <= 50);
     
 console.log(idades);
