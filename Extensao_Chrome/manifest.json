@@ -1,0 +1,14 @@
+{
+    "name": "Caixa alta",
+    "version": "1.0",
+    "description": "Transforma o texto em caixa alta",
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "./img/uppercase16.png",
+        "48": "./img/uppercase48.png",
+        "128": "./img/uppercase128.png" 
+    },
+    "manifest_version": 2
+}
